@@ -1,0 +1,40 @@
+{
+	"name": "environmentbar",
+	"title": "jQuery environment-bar",
+	"description": "Environment bar to distinguish QA/Test/Development systems.",
+	"keywords": [
+		"environment",
+		"environment-bar"
+	],
+	"version": "0.0.0",
+	"author": {
+		"name": "Mark Deepwell",
+		"email": "mark@markdeepwell.com",
+		"url": "https://github.com/stage3systems/environment-bar"
+	},
+	"maintainers": [
+		{
+			"name": "Mark Deepwell",
+			"email": "mark@markdeepwell.com",
+			"url": "https://github.com/deepwell"
+		},
+		{
+			"name": "Andy Liang",
+			"email": "andy@stage3systems.com",
+			"url": "https://github.com/agroove"
+		}
+	],
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "http://zenorocha.mit-license.org/"
+		}
+	],
+	"bugs": "https://github.com/stage3systems/environment-bar/issues",
+	"homepage": "https://github.com/stage3systems/environment-bar",
+	"docs": "https://github.com/stage3systems/environment-bar#readme",
+	"download": "https://github.com/stage3systems/environment-bar/archive/master.zip",
+	"dependencies": {
+		"jquery": ">=1.4"
+	}
+}

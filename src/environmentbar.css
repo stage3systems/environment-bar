@@ -1,0 +1,43 @@
+.environment-bar {
+  width: 100%;
+  height: 30px;
+  padding: 0 10px;
+  background-color: #777;
+  font: bold 13px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  color: #fff;
+  line-height: 29px;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+  text-transform: uppercase;
+  position: fixed;
+  top: 0;
+  z-index: 1051;
+}
+.environment-bar.dev, .environment-bar.development {
+  background-color: #396;
+  background: -moz-linear-gradient(left, #396 50%, #3a6 50%);
+  background: -webkit-linear-gradient(left, #396 50%, #3a6 50%);
+  background: -ms-linear-gradient(left, #396 50%, #3a6 50%);
+  background: linear-gradient(left, #396 50%, #3a6 50%);
+  background-size: 60px 30px;
+}
+.environment-bar.qa, .environment-bar.test, .environment-bar.testing {
+  background-color: #900;
+  background: -moz-linear-gradient(left, #900 50%, #800 50%);
+  background: -webkit-linear-gradient(left, #900 50%, #800 50%);
+  background: -ms-linear-gradient(left, #700 50%, #800 50%);
+  background: linear-gradient(left, #900 50%, #800 50%);
+  background-size: 60px 30px;
+}
+.environment-bar.staging {
+  background-color: #fb0;
+  background: -moz-linear-gradient(left, #fb0 50%, #fa0 50%);
+  background: -webkit-linear-gradient(left, #fb0 50%, #fa0 50%);
+  background: -ms-linear-gradient(left, #fb0 50%, #fa0 50%);
+  background: linear-gradient(left, #fb0 50%, #fa0 50%);
+  background-size: 60px 30px;
+}
+.environment-bar .branch {
+  text-transform: none;
+  letter-spacing: normal;
+  float: right;
+}

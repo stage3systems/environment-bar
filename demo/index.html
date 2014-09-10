@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery environment-bar</title>
+		<meta charset="UTF-8">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+		<script src="../src/jquery.environmentbar.js"></script>
+		<script type="text/css">
+		</script>
+	</head>
+	<body>
+		<p>Your app here &#127919;.</p>
+		<p>Lorem ipsum...</p>
+		<script>
+			$(function() {
+				$("body").environmentBar({
+					env: 'test',
+					branch: 'features/add-more-gloss'
+				});
+			});
+		</script>
+	</body>
+</html>
