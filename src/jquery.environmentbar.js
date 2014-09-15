@@ -7,6 +7,8 @@
 		tst: "#900, #800",
 		stg: "#fb0, #fa0"
 	};
+	var envBarHeight = "30px";
+
 	// add aliases
 	colours.qa = colours.tst;
 	colours.test = colours.tst;
@@ -37,6 +39,7 @@
 		init: function () {
 			this.show();
 			this.addStyles();
+			$('body').css('padding-top', envBarHeight);
 		},
 
 		show: function () {
@@ -55,22 +58,26 @@
 			this.$element.find(".branch").css({
 				"text-transform": "none",
 				"letter-spacing": "normal",
-				"float": "right",
+				"float": "right"
 			});
 
 			var styles = {
 				"width": "100%",
-				"height": "30px",
+				"height": envBarHeight,
 				"padding": "0 10px",
 				"background-color": "#777",
-				"font": "bold 13px 'Helvetica Neue', Arial, Helvetica, sans-serif",
+				"font": "15px 'Helvetica Neue', Arial, Helvetica, sans-serif",
 				"color": "#fff",
-				"line-height": "29px",
+				"line-height": envBarHeight,
 				"text-shadow": "0 -1px 0 rgba(0,0,0,0.2)",
 				"text-transform": "uppercase",
 				"position": "fixed",
 				"top": "0",
-				"z-index": "1051",
+				"left": "0",
+				"z-index": "9999",
+				"-moz-box-sizing": "border-box",
+				"-webkit-box-sizing": "border-box",
+				"box-sizing": "border-box"
 			};
 
 			if (typeof colours[ this.settings.env ] !== "undefined") {
