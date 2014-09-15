@@ -1,12 +1,12 @@
 {
 	"name": "environmentbar",
-	"title": "jQuery environment-bar",
+	"title": "environment-bar",
 	"description": "Environment bar to distinguish QA/Test/Development systems.",
 	"keywords": [
 		"environment",
 		"environment-bar"
 	],
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"author": {
 		"name": "Mark Deepwell",
 		"email": "mark@markdeepwell.com",
