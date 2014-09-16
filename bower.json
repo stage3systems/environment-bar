@@ -5,11 +5,19 @@
 		"Mark Deepwell <mark@markdeepwell.com>",
 		"Andy Liang <andy@stage3systems.com>"
 	],
-	"description": "Clearly distinguish if you are on a test, staging, or development environment..",
+	"description": "Clearly distinguish if you are on a test, staging, or development environment.",
 	"main": "src/jquery.environmentbar.js",
+	"ignore": [
+		"CONTRIBUTING.md",
+		"Gruntfile.js",
+		"package.json"
+	],
 	"keywords": [
 		"environment",
 		"environment-bar"
 	],
+	"dependencies": {
+		"jquery": ">= 1.4.0"
+	}
 	"license": "MIT"
 }
