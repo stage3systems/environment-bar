@@ -1,4 +1,4 @@
-# jQuery environment-bar [![Build Status](https://secure.travis-ci.org/stage3systems/stage3systems.svg?branch=master)](https://travis-ci.org/stage3systems/stage3systems) ![Bower Version](https://badge.fury.io/bo/stage3systems.svg)
+# jQuery environment-bar [![Bower version](https://badge.fury.io/bo/environment-bar.svg)](http://badge.fury.io/bo/environment-bar)
 
 ### Clear way to display which environment the product instance is
 
