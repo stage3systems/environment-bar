@@ -39,4 +39,4 @@ Check [Releases](https://github.com/stage3systems/environment-bar/releases) for 
 
 ## License
 
-[MIT License](https://github.com/stage3systems/environment-bar/LICENSE.txt)
+[MIT License](https://github.com/stage3systems/environment-bar/blob/master/LICENSE.txt)

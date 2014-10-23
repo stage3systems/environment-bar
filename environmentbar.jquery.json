@@ -27,7 +27,7 @@
 	"licenses": [
 		{
 			"type": "MIT",
-			"url": "https://github.com/stage3systems/environment-bar/LICENSE.txt"
+			"url": "https://github.com/stage3systems/environment-bar/blob/master/LICENSE.txt"
 		}
 	],
 	"bugs": "https://github.com/stage3systems/environment-bar/issues",
