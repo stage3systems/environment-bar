@@ -1,5 +1,5 @@
 /*
- *  environment-bar - v0.1.0
+ *  environment-bar - v0.2.0
  *  Environment bar to distinguish QA/Test/Development systems.
  *  https://github.com/stage3systems/environment-bar
  *
@@ -25,11 +25,14 @@
 	colours.development = colours.dev;
 
 	var defaults = {
+		colours: colours,
+		// environment
 		env: "Test", // eg: Staging, Test, Development
 		label: "system", // label postfix
-		branch: "",
-		showBranch: true,
-		colours: colours
+		// branch/version/misc. details
+		showDetails: true,
+		detailsLabel: "",
+		detailsValue: ""
 	};
 
 	// The actual plugin constructor
@@ -52,18 +55,19 @@
 
 		show: function () {
 			var label = this.settings.env + " " + this.settings.label;
-			var branch = this.settings.branch;
+			var detailsLabel = this.settings.detailsLabel;
+			var detailsValue = this.settings.detailsValue;
 			var classes = "environment-bar " + this.settings.env.toLowerCase();
 			var html = label;
-			if (branch && this.settings.showBranch) {
-				html += "<span class=\"branch\">Branch: " + branch + "</span>";
+			if ( detailsLabel && detailsValue && this.settings.showDetails ) {
+				html += "<span class=\"branch\">" + detailsLabel + ": " + detailsValue + "</span>";
 			}
 
 			this.$element.html(html).addClass(classes);
 		},
 
 		addStyles: function () {
-			this.$element.find(".branch").css({
+			this.$element.find( ".branch" ).css({
 				"text-transform": "none",
 				"letter-spacing": "normal",
 				"float": "right"
@@ -88,7 +92,7 @@
 				"box-sizing": "border-box"
 			};
 
-			if (typeof colours[ this.settings.env ] !== "undefined") {
+			if ( typeof colours[ this.settings.env ] !== "undefined" ) {
 				var envColours = colours[ this.settings.env ].split(",");
 				// add colours to indicate which environment
 				styles[ "background-colour" ] = envColours[ 0 ];

@@ -29,6 +29,14 @@ Insert screenshot here.
 	});
 	```
 
+### Additional Options
+
+You can add additional details to be displayed such as a version number or branch.
+
+```detailsLabel: "Version"```: The label eg: Version, Branch
+```detailsValue: "1.2"```: Value to display
+```showDetails: true```: Show or hide details. Defaults to true
+
 ## Contributing
 
 Check [CONTRIBUTING.md](https://github.com/stage3systems/environment-bar/blob/master/CONTRIBUTING.md) for more information.
