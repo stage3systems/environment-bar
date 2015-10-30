@@ -84,8 +84,8 @@
 				"box-sizing": "border-box"
 			};
 
-			if ( typeof colours[ this.settings.env ] !== "undefined" ) {
-				var envColours = colours[ this.settings.env ].split(",");
+			if ( typeof this.settings.colours[ this.settings.env ] !== "undefined" ) {
+				var envColours = this.settings.colours[ this.settings.env ].split(",");
 				// add colours to indicate which environment
 				styles[ "background-colour" ] = envColours[ 0 ];
 				styles.background = "linear-gradient(to left, " + envColours[ 0 ] + " 50%, " + envColours[ 1 ] + " 50%)";

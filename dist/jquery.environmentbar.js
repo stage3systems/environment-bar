@@ -1,5 +1,5 @@
 /*
- *  environment-bar - v0.2.0
+ *  environment-bar - v0.2.1
  *  Environment bar to distinguish QA/Test/Development systems.
  *  https://github.com/stage3systems/environment-bar
  *
@@ -92,8 +92,8 @@
 				"box-sizing": "border-box"
 			};
 
-			if ( typeof colours[ this.settings.env ] !== "undefined" ) {
-				var envColours = colours[ this.settings.env ].split(",");
+			if ( typeof this.settings.colours[ this.settings.env ] !== "undefined" ) {
+				var envColours = this.settings.colours[ this.settings.env ].split(",");
 				// add colours to indicate which environment
 				styles[ "background-colour" ] = envColours[ 0 ];
 				styles.background = "linear-gradient(to left, " + envColours[ 0 ] + " 50%, " + envColours[ 1 ] + " 50%)";
