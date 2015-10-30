@@ -29,6 +29,27 @@ Insert screenshot here.
 	});
 	```
 
+### Environments
+By default the environment bar uses default colours for these environments:
+
+* `dev` : `"#396, #3a6"`
+* `tst` : `"#900, #800"`
+* `stg` : `"#fb0, #fa0"`
+
+These map to these environments when supplied via the env option (note there is no production env):
+
+* `qa` : `tst`
+* `test`: `tst`
+* `testing`: `tst`
+* `staging`: `stg`
+* `development`: `dev`
+
+##### Note:
+You can override the env name and supply your own color set in the options via:
+
+* ```env: "myenv", colours: {myenv: "#900, #700"}"```
+
+
 ### Additional Options
 
 You can add additional details to be displayed such as a version number or branch.
@@ -36,6 +57,7 @@ You can add additional details to be displayed such as a version number or branc
 * ```detailsLabel: "Version"```: The label eg: Version, Branch
 * ```detailsValue: "1.2"```: Value to display
 * ```showDetails: true```: Show or hide details. Defaults to true
+
 
 ## Contributing
 
